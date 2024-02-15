@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/lilla">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/indietro"
+        android:background="@drawable/baseline_arrow_back_24"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/testo_registra"
+        android:layout_marginTop="-20dp"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="660dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/layout_tondo">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nome_utente"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/nomeutente"
+            android:background="@drawable/edittext_tondi"
+            android:hint="@string/esempio_nome_utente"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/errore_nomeutente"
+            android:textSize="13sp"
+            android:background="@drawable/edittext_tondi_errori"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nome"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/nome"
+            android:background="@drawable/edittext_tondi"
+            android:layout_gravity="center"
+            android:hint="@string/esempio_nome"
+            />
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/errore_nome"
+            android:textSize="13sp"
+            android:background="@drawable/edittext_tondi_errori"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cognome"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/cognome"
+            android:background="@drawable/edittext_tondi"
+            android:layout_gravity="center"
+            android:hint="@string/esempio_cognome"
+            />
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/errore_cognome"
+            android:textSize="13sp"
+            android:background="@drawable/edittext_tondi_errori"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/data_nascita"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/data_nascita"
+            android:background="@drawable/edittext_tondi"
+            android:layout_gravity="center"
+            android:inputType="date"
+            android:hint="@string/esempio_data"
+            />
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/errore_datanascita"
+            android:textSize="13sp"
+            android:background="@drawable/edittext_tondi_errori"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:id="@+id/password"
+            android:background="@drawable/edittext_tondi"
+            android:layout_gravity="center"
+            android:hint="@string/esempio_password"
+            android:inputType="textPassword"
+            />
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/errore_password"
+            android:textSize="13sp"
+            android:background="@drawable/edittext_tondi_errori"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            />
+
+        <Button
+            android:id="@+id/conferma"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/viola_scuro"
+            android:layout_gravity="center"
+            android:text="@string/conferma" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

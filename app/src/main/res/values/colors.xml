@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#D40e0e</color>
+    <color name="lilla">#8A7AB6</color>
+    <color name="light_blue">#79A6E2</color>
+    <color name="dark_red">#860909</color>
+    <color name="sfondino">#4902AE</color>
+    <color name="viola_scuro">#522473</color>
+    <color name="viola_meno_scuro">#B48C6AAE</color>
+    <color name="bordo_edittext">#FF0D8F83</color>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_gravity="start"
+        android:layout_width="55sp"
+        android:layout_height="50sp"
+        android:layout_weight="0"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:background="@color/viola_meno_scuro"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/voto_esame"
+        />
+
+    <TextView
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_height="50sp"
+        android:background="@color/viola_meno_scuro"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/nome_esame"/>
+
+    <TextView
+        android:layout_gravity="end"
+        android:layout_width="55sp"
+        android:layout_height="50sp"
+        android:layout_weight="0"
+        android:textAlignment="center"
+        android:textSize="26sp"
+        android:background="@color/viola_meno_scuro"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/cfu_esame"
+        />
+
+</LinearLayout>

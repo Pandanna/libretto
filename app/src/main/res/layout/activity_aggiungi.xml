@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lilla"
+    tools:context=".Aggiungi">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/testo_aggiungi"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="-60dp"/>
+
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@drawable/layout_tondo">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_esame"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:id="@+id/nome_esame"
+                android:background="@drawable/edittext_tondi"
+                android:hint="@string/esempio_esame"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/errore_nomeesame"
+                android:textSize="13sp"
+                android:background="@drawable/edittext_tondi_errori"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/voto_esame"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:id="@+id/voto_esame"
+                android:background="@drawable/edittext_tondi"
+                android:layout_gravity="center"
+                android:hint="@string/esempio_voto"
+                />
+
+            <TextView
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/errore_votoesame"
+                android:textSize="13sp"
+                android:background="@drawable/edittext_tondi_errori"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cfu_esame"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:id="@+id/cfu_esame"
+                android:background="@drawable/edittext_tondi"
+                android:layout_gravity="center"
+                android:hint="@string/esempio_cfu"
+                />
+
+            <TextView
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/errore_cfuesame"
+                android:textSize="13sp"
+                android:background="@drawable/edittext_tondi_errori"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                />
+
+            <Button
+                android:id="@+id/inserisci"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/viola_scuro"
+                android:layout_gravity="center"
+                android:text="@string/inserisci" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:labelVisibilityMode="labeled">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>
